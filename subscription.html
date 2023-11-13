@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil-Memory-Game</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Acceuil</a></li>
+                    <li><a href="./play.html">Jouer</a></li>
+                    <li><a href="./profil.html">Profil</a></li>
+                    <li><a href="./subscription.html">Inscription</a></li>
+                    <li><a href="./connexion.html">Connexion</a></li>
+                </ul>
+            </nav>
+            <h1>ENI - MEMORY - INSCRIPTION</h1>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <h2>Inscription</h2>
+            <form action="#" method="post">
+                <div class="label-input">
+                    <label for="name">Pseudo* :</label>
+                    <input type="text" name="name" id="id" minlength="3" maxlength="8" required placeholder="Entre 3 et 8 caractères">
+                </div>
+                <div class="label-input">
+                    <label for="email">Email* :</label>
+                    <input type="email" name="email" id="email" placeholder="Votre email, ex: jonh@doe.fr" required>
+                </div>
+                <div class="label-input">
+                    <label for="password">Mot de passe* :</label>
+                    <input type="password" name="password" id="password" placeholder="Votre mot de passe" minlength="6" required>
+                    <p class="input-info">Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.</p>
+                </div>
+                <div class="label-input">
+                    <label for="password-confirm">Confirmer le mot de passe* :</label>
+                    <input type="password" name="password-confirm" id="password-confirm" placeholder="Confirmer mot de passe" required>
+                </div>
+                <div class="buttons">
+                    <button type="submit">Valider</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

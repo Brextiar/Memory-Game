@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil-Memory-Game</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Acceuil</a></li>
+                    <li><a href="./play.html">Jouer</a></li>
+                    <li><a href="./profil.html">Profil</a></li>
+                    <li><a href="./subscription.html">Inscription</a></li>
+                    <li><a href="./connexion.html">Connexion</a></li>
+                </ul>
+            </nav>
+            <h1>ENI - MEMORY - PROFIL</h1>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <section>
+                <h2>Profil</h2>
+                <div>
+                    <img src="#" alt="">
+                </div>
+            </section>
+            <section>
+                <h3>Utilisateur n°<span>#</span></h3>
+                <form action="#" method="post">
+                    <div class="label-input">
+                        <label for="name">Pseudo :</label>
+                        <input type="text" name="name" id="name" placeholder="Entre 3 et 8 caractère" minlength="3" maxlength="8">
+                    </div>
+                    <div class="label-input">
+                        <label for="email">Email :</label>
+                        <input type="email" name="email" id="email" value="toto@gggg.fr" disabled>
+                    </div>
+                    <fieldset>
+                        <legend>Option de jeu</legend>
+                        <div>
+                            <label for="theme">Choix du thème :</label>
+                            <select name="theme" id="theme">
+                                <option value="theme1">Pokemon</option>
+                                <option value="theme2">Nature</option>
+                                <option value="theme3">Noir et blanc</option>
+                            </select>
+                        </div>
+                        <div>
+                            <img src="#" alt="">
+                        </div>
+                        <div>
+                            <label for="size">Taille du Memory</label>
+                            <select name="size" id="size">
+                                <option value="4-3">4*3</option>
+                                <option value="4-6">4*6</option>
+                                <option value="4-9">4*9</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <button type="submit" id="saveOptions">Enregistrer</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
