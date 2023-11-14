@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil-Memory-Game</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/profil.css">
 </head>
 
 <body>
     <header>
-        <div>
+
             <nav>
                 <ul>
                     <li><a href="./index.html">Acceuil</a></li>
@@ -21,17 +22,16 @@
                 </ul>
             </nav>
             <h1>ENI - MEMORY - PROFIL</h1>
-        </div>
     </header>
     <main>
         <div class="main-container">
-            <section>
+            <section class="user-profil">
                 <h2>Profil</h2>
                 <div>
-                    <img src="#" alt="">
+                    <img src="./assets/img/profil-picture.png" alt="">
                 </div>
             </section>
-            <section>
+            <section class="user-option">
                 <h3>Utilisateur n°<span>#</span></h3>
                 <form action="#" method="post">
                     <div class="label-input">
@@ -45,15 +45,15 @@
                     <fieldset>
                         <legend>Option de jeu</legend>
                         <div>
-                            <label for="theme">Choix du thème :</label>
+                            <label for="theme">Choix du thème:</label>
                             <select name="theme" id="theme">
-                                <option value="theme1">Pokemon</option>
-                                <option value="theme2">Nature</option>
-                                <option value="theme3">Noir et blanc</option>
+                                <option value="theme1">Alphabet</option>
+                                <option value="theme2">Légumes</option>
+                                <option value="theme3">Chien</option>
                             </select>
                         </div>
-                        <div>
-                            <img src="#" alt="">
+                        <div class="theme-preview-container">
+                            <img src="./assets/img/alphabet-scrabble/memory_detail_scrabble.png" alt="aperçu du thème">
                         </div>
                         <div>
                             <label for="size">Taille du Memory</label>
@@ -64,7 +64,9 @@
                             </select>
                         </div>
                     </fieldset>
-                    <button type="submit" id="saveOptions">Enregistrer</button>
+                    <div class="buttons-container">
+                        <button type="submit" id="saveOptions">Enregistrer</button>
+                    </div>
                 </form>
             </section>
         </div>

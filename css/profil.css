@@ -1,0 +1,33 @@
+.user-profil {
+    margin-bottom: 30px;
+}
+
+.user-profil h2 {
+    margin-bottom: 15px;
+}
+
+.user-profil img{
+    width: 50px;
+}
+
+.user-option h3 {
+    margin-bottom: 15px;
+}
+
+.user-option form {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.theme-preview-container {
+    height: 300px;
+    max-width: 800px;
+    overflow: hidden;
+    width: 100%;
+    margin: 20px 0;
+
+}
+
+.user-option img {
+    width: 100%;
+}
