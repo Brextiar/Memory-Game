@@ -11,15 +11,16 @@
 
 <body>
     <header>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Acceuil</a></li>
-                    <li><a href="./play.html">Jouer</a></li>
-                    <li><a href="./profil.html">Profil</a></li>
-                    <li><a href="./subscription.html">Inscription</a></li>
-                    <li><a href="./connexion.html">Connexion</a></li>
-                </ul>
-            <h1>ENI - MEMORY - INSCRIPTION</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Acceuil</a></li>
+                <li><a href="./play.html">Jouer</a></li>
+                <li><a href="./profil.html">Profil</a></li>
+                <li class="actual-page"><a href="./subscription.html">Inscription</a></li>
+                <li><a href="./connexion.html" class="connection">Connexion</a></li>
+            </ul>
+        </nav>
+        <h1>ENI - MEMORY - INSCRIPTION</h1>
         </div>
     </header>
     <main>
@@ -34,12 +35,14 @@
                     </div>
                     <div class="label-input">
                         <label for="email">Email* :</label>
-                        <input type="email" name="email" id="email" placeholder="Votre email, ex: jonh@doe.fr" required>
+                        <input type="email" name="email" id="email" placeholder="Votre email, ex: jonh@doe.fr"
+                            pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+                            required>
                     </div>
                     <div class="label-input">
                         <label for="password">Mot de passe* :</label>
                         <input type="password" name="password" id="password" placeholder="Votre mot de passe"
-                            minlength="6" required>
+                        pattern="^(?=.*[!@#$%^&*()_+\-=[\]{};':\\|,.>/?])(?=.*[0-9])(?=.*[a-zA-Z]).{6,}$" required>
                         <p class="input-info">Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.</p>
                     </div>
                     <div class="label-input">

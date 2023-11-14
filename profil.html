@@ -16,9 +16,9 @@
                 <ul>
                     <li><a href="./index.html">Acceuil</a></li>
                     <li><a href="./play.html">Jouer</a></li>
-                    <li><a href="./profil.html">Profil</a></li>
+                    <li class="actual-page"><a href="./profil.html">Profil</a></li>
                     <li><a href="./subscription.html">Inscription</a></li>
-                    <li><a href="./connexion.html">Connexion</a></li>
+                    <li><a href="./connexion.html"class="connection">Connexion</a></li>
                 </ul>
             </nav>
             <h1>ENI - MEMORY - PROFIL</h1>
@@ -32,11 +32,11 @@
                 </div>
             </section>
             <section class="user-option">
-                <h3>Utilisateur n°<span>#</span></h3>
+                <h3>Utilisateur n°<span>Anonyme</span></h3>
                 <form action="#" method="post">
                     <div class="label-input">
                         <label for="name">Pseudo :</label>
-                        <input type="text" name="name" id="name" placeholder="Entre 3 et 8 caractère" minlength="3" maxlength="8">
+                        <input type="text" name="name" id="name" placeholder="Entre 3 et 8 caractère" minlength="3" maxlength="8" disabled value="Anonyme">
                     </div>
                     <div class="label-input">
                         <label for="email">Email :</label>
@@ -44,7 +44,7 @@
                     </div>
                     <fieldset>
                         <legend>Option de jeu</legend>
-                        <div>
+                        <div class="label-input">
                             <label for="theme">Choix du thème:</label>
                             <select name="theme" id="theme">
                                 <option value="theme1">Alphabet</option>
@@ -52,10 +52,7 @@
                                 <option value="theme3">Chien</option>
                             </select>
                         </div>
-                        <div class="theme-preview-container">
-                            <img src="./assets/img/alphabet-scrabble/memory_detail_scrabble.png" alt="aperçu du thème">
-                        </div>
-                        <div>
+                        <div class="label-input">
                             <label for="size">Taille du Memory</label>
                             <select name="size" id="size">
                                 <option value="4-3">4*3</option>
@@ -63,6 +60,10 @@
                                 <option value="4-9">4*9</option>
                             </select>
                         </div>
+                        <div class="theme-preview-container">
+                            <img src="./assets/img/alphabet-scrabble/memory_detail_scrabble.png" alt="aperçu du thème">
+                        </div>
+                        
                     </fieldset>
                     <div class="buttons-container">
                         <button type="submit" id="saveOptions">Enregistrer</button>
