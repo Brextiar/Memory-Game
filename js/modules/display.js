@@ -13,4 +13,5 @@ function pathWithTile(map) {
         map.set(`${$card[i].id}`, `${SHUFFLE_IMG_PATH[i]}`)
     }
 }
+
 export {shuffleArray, pathWithTile}
