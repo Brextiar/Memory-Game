@@ -27,32 +27,36 @@
         <div class="main-container">
             <section>
                 <h2>Inscription</h2>
-                <form action="#" method="post">
+                <form action="#" method="post" id="newUserForm">
                     <div class="label-input">
-                        <label for="name">Pseudo* :</label>
-                        <input type="text" name="name" id="id" minlength="3" maxlength="8" required
+                        <label for="pseudo">Pseudo* :</label>
+                        <input type="text" name="pseudo" id="pseudo" minlength="3" maxlength="8" required
                             placeholder="Entre 3 et 8 caractères">
+                        <p class="input-info invalid" id="pseudoError"></p>
                     </div>
                     <div class="label-input">
                         <label for="email">Email* :</label>
-                        <input type="email" name="email" id="email" placeholder="Votre email, ex: jonh@doe.fr"
-                            pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
-                            required>
+                        <input type="email" name="email" id="email" placeholder="Votre email, ex: jonh@doe.fr" required>
+                        <p class="input-info invalid" id="emailError"></p>
                     </div>
                     <div class="label-input">
                         <label for="password">Mot de passe* :</label>
-                        <input type="password" name="password" id="password" placeholder="Votre mot de passe"
-                        pattern="^(?=.*[!@#$%^&*()_+\-=[\]{};':\\|,.>/?])(?=.*[0-9])(?=.*[a-zA-Z]).{6,}$" required>
+                        <input type="password" name="password" id="password" placeholder="Votre mot de passe" required>
                         <p class="input-info">Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.</p>
+                        <p class="input-info invalid" id="passwordError"></p>
                     </div>
                     <div class="label-input">
                         <label for="password-confirm">Confirmer le mot de passe* :</label>
                         <input type="password" name="password-confirm" id="password-confirm"
                             placeholder="Confirmer mot de passe" required>
+                        <p class="input-info invalid" id="matchError"></p>
                     </div>
                     <div class="buttons-container">
                         <button type="submit">Valider</button>
                         <button type="reset" class="becarefull">Reset</button>
+                    </div>
+                    <div class="validInscription">
+                        <p id="validInscription"></p>
                     </div>
                 </form>
             </section>
@@ -61,6 +65,7 @@
     <footer>
 
     </footer>
+    <script type="module" src="./js/subscription.js"></script>
 </body>
 
 </html>
