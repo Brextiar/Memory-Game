@@ -58,7 +58,7 @@ function matchPassword(e) {
 
 function emailExisting(e) {
 	const old = getData('users');
-	console.log('old ==>' + old);
+
 	if (old.length < 1) {
 		e.currentTarget.querySelector('#emailError').innerText = '';
 		return true;
@@ -72,7 +72,6 @@ function emailExisting(e) {
 				e.currentTarget.querySelector('#email').value = '';
 				e.currentTarget.querySelector('#password').value = '';
 				e.currentTarget.querySelector('#password-confirm').value = '';
-				console.log('emailExisting :>> false');
 				return false;
 			}
 		});
@@ -81,4 +80,32 @@ function emailExisting(e) {
 	}
 }
 
-export { validEmail, validPassword, matchPassword, validPseudo, emailExisting };
+function isConnected(key) {
+	const USERS = getData(key);
+	const logIn = document.getElementById('logIn');
+	let connected = false;
+
+	USERS.forEach((user) => {
+		if (user.connection) {
+			connected = true;
+		}
+	});
+	if (connected) {
+		logIn.classList.remove('animatedConectionBtn');
+		logIn.style.color = 'red';
+		logIn.innerText = 'Déconnexion';
+	} else {
+		logIn.classList.add('animatedConectionBtn');
+		logIn.style.color = 'green';
+		logIn.innerText = 'Connexion';
+	}
+}
+
+export {
+	validEmail,
+	validPassword,
+	matchPassword,
+	validPseudo,
+	emailExisting,
+	isConnected,
+};

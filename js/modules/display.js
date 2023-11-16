@@ -14,4 +14,6 @@ function pathWithTile(map) {
 	}
 }
 
+
+
 export { shuffleArray, pathWithTile };

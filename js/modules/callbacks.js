@@ -58,4 +58,9 @@ function submitUser(e) {
 	}
 }
 
-export { submitUser };
+function logOut(e) {
+	e.preventDefault();
+	const USER = getData('users');
+}
+
+export { submitUser, logOut };
