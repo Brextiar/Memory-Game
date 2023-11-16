@@ -1,5 +1,5 @@
-import { submitUser, } from "./modules/callbacks.js";
+import { submitUser } from './modules/callbacks.js';
 
-const newUserForm = document.getElementById('newUserForm')
+const newUserForm = document.getElementById('newUserForm');
 
 newUserForm.addEventListener('submit', submitUser);
