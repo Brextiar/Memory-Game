@@ -13,7 +13,8 @@ function getData(key) {
  */
 function saveData(key, data) {
     // Get Previous and Push
-    const old = getData("users")
+    const old = getData(`${key}`)    
+    console.log('old :>> ', old);
     // On ajoute le nouveau user à la liste existante
     old.push(data)
     // Convert data
@@ -21,5 +22,19 @@ function saveData(key, data) {
     // Save it
     localStorage.setItem(key, convertData)
 }
+
+/**
+ * 
+ * @param {string} key 
+ * @returns 
+ */
+// function saveUsersId (key) {
+//     console.log('je suis dans la fonction saveUser:>> ');
+//     let old = JSON.parse(localStorage.getItem(key)) ?? []
+//     console.log(old)
+//     old.push()
+//     const convertData = JSON.stringify(old)
+//     localStorage.setItem(key, convertData)
+// }
 // Export to
 export { getData, saveData }

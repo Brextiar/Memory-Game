@@ -78,7 +78,7 @@ $card.forEach(tile => {
                         secondTileSrc = ''
                         count = 0
                     }
-                    
+
                     $card.forEach(tile => {
                         if (!tile.src.endsWith('question.svg')) {
                             victory--
@@ -92,22 +92,10 @@ $card.forEach(tile => {
                         score = 0
                         count = 0
                     }
-                }, 1000);
+                }, 500);
             }
         }
-        // $card.forEach(tile => {
-        //     if (tile.src.endsWith('question.svg')) {
-        //         victory--
-        //     }
-        // })
-        // console.log(victory)
-        // if (victory <= 0) {
-        //     document.getElementById('score').innerText = `${score}. Victoire! Vous pouvez recommencer une partie en appuyant sur la barre d'espace.`
-        //     victory = 12
-        //     score = 0
-        //     count = 0
-        // }
     })
 })
 
-export { $card, SHUFFLE_IMG_PATH}
+export { $card, SHUFFLE_IMG_PATH }
